@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="800.0" prefWidth="1400.0" spacing="15" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.unb.cs3035.project.HelpController">
+    <children>
+        <MenuBar prefHeight="25" prefWidth="1400">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Open" />
+                        <MenuItem mnemonicParsing="false" text="Save" />
+                        <MenuItem fx:id="close" mnemonicParsing="false" text="Close" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem fx:id="help" mnemonicParsing="false" text="Help" />
+                        <MenuItem fx:id="about" mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+      <VBox>
+         <children>
+            <Label text="Help">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="50.0" right="50.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Separator prefWidth="1200.0" />
+            <Label layoutX="60.0" layoutY="30.0" text="This app is very easy and convenient to use.">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="50.0" right="50.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label layoutX="60.0" layoutY="97.0" text="It has three main parts in it-">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="50.0" right="50.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <VBox>
+               <children>
+                  <Label text="The Task List:">
+                     <font>
+                        <Font name="Arial Bold Italic" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="70.0" right="70.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="The first part is the Task List. Here, you can organize your tasks in different sections, namely today's, upcoming,">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="90.0" top="5.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="100.0" layoutY="55.0" text="starred list, and deleted tasks. You can add new tasks, edit them, view them and delete them. If you check">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="90.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label layoutX="100.0" layoutY="95.0" text="a task, it will mark as important and you can check/uncheck it to set its importance. When you delete a task, a task,">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="90.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label layoutX="100.0" layoutY="135.0" text="they go into the deleted tasks list and you can restore or delete them permanently from there.">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="90.0" right="90.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="201.0">
+               <children>
+                  <Label text="The Meeting List:">
+                     <font>
+                        <Font name="Arial Bold Italic" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="70.0" right="70.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="The second part is the Meeting List. Here, you can organize your meetings in different sections, namely today's,">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="90.0" top="5.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="100.0" layoutY="55.0" text="upcoming, starred, and deleted meetings. You can add new ,meetings, edit them, view them and delete them. If you">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="90.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label layoutX="100.0" layoutY="95.0" text="check a meeting, it will marked as important and you can check/uncheck it to set its importance. When you delete a ">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="90.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label layoutX="100.0" layoutY="135.0" text="a meeting, they go into the deleted meetings list and you can restore or delete them permanently from there.">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="90.0" right="90.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="326.0">
+               <children>
+                  <Label text="The Shopping List:">
+                     <font>
+                        <Font name="Arial Bold Italic" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="70.0" right="70.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="The last part is the Shopping List. It is very simple list where you add items into the shopping list, move them">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="90.0" right="90.0" top="5.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="100.0" layoutY="55.0" text="to the Wish List, view them, edit them and delete them. You can also set the value of whether they are purchased ">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="90.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label layoutX="100.0" layoutY="95.0" text="or not by selecting/unselecting the checkbox. Once, an item is deleted, you can go to the Deleted Items list and">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="90.0" right="90.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label layoutX="100.0" layoutY="135.0" text="restore them or delete them permanently.">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="90.0" right="90.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+         <VBox.margin>
+            <Insets left="150.0" right="150.0" />
+         </VBox.margin>
+      </VBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <Button fx:id="button" mnemonicParsing="false" style="-fx-background-color: green;" text="Back to the To Do List" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+    </children>
+</VBox>
